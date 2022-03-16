@@ -50,20 +50,27 @@ let InverseString =  (texte) => {
  * Exercices sur les nombres et les caluls mathématiques
  */
 let calculPuissance =  (x, y) => {
-
+    return Math.pow(x, y);
 }
 let valeurAbsolue =  (nombre) => {
-
+ return Math.abs(nombre);
 }
 let valeurAbsolueArray =  (array) => {
+    let newArr = [];
+    array.forEach(elem => 
+        {
+            abs = Math.abs(elem);
+            newArr.push(abs);
+        })
 
+    return newArr;
 }
 let sufaceCercle =  (rayon) => {
-
+    return Math.round(Math.PI * (rayon * rayon));
 }
 let hypothenuse =  (ab, ac) => {
-
+    return Math.hypot(ab, ac);
 }
 let calculIMC =  (poids, taille) => {
-
+    return Number((poids / (taille * taille)).toFixed(2));
 }
